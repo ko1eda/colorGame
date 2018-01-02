@@ -1,0 +1,89 @@
+body{
+	background-color: #232323;
+	/*this removes all extra spacing on top*/
+	margin: 0;
+	font-family: "Montserrat","Avenir";
+}
+
+.square{
+	width: 30%;
+	padding-bottom:30%;
+	margin: 1.66%;
+	float: left;
+	/*rounds edges of squares 50% for circles*/
+	border-radius: 50%;
+	transition: background 0.5s;
+
+	/*these are for safari and mozilla support*/
+	-webkit-transition:background 0.5s;
+	-moz-transition:background 0.5s;
+}
+
+#container{
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+h1 {
+	background-color: steelblue;
+	text-align: center;
+	color: white;
+	/*removes all the margins on the h1 tag*/
+	margin: 0;
+	/*removes all bolding from h1*/
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.1;
+	padding: 5px 0;
+}
+
+/*winning color*/
+#goal{
+	font-size: 1.9em;
+}
+
+#topBar{
+	background-color: white;
+	height: 25px;
+	text-align: center;
+}
+
+#message {
+	/*padding: 0 147px;*/
+	/*spacing for message text*/
+	display: inline-block;
+	width: 22%;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;	
+	height: 100%;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	/*this transitions the hover sudoclass effects*/
+	transition: all 0.2s;
+5
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+}
+
+button:hover{
+	background-color: steelblue;
+	color: white;
+}
+
+/*js classlist effect classes*/
+.selected{
+	background-color: steelblue;
+	color: white;
+}
+
+/*hides the bottom row when easy mode is selected*/
+.easyMode{
+	/*background-color: #232323 !important;*/
+	display: none;
+}
+
